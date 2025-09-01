@@ -19,7 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <ViewTransitions>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
+
         <body className={`font-hanken-grotesk antialiased`}>
           <Providers>
           <ReactLenis root>
