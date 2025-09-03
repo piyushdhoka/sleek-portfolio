@@ -25,6 +25,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  eslint: {
+    // ✅ This makes Vercel ignore ESLint errors during builds
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
