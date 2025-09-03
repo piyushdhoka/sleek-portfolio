@@ -42,7 +42,7 @@ export const projects: Project[] = [
     github: 'https://github.com/piyushdhoka/twix_ai',
     live: '',
     details: true,
-    projectDetailsPageSlug: '/projects/notesbuddy',
+    projectDetailsPageSlug: '/projects/twixai',
     isWorking: true,
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     github: 'https://github.com/nakulchandak89/Tender_summerizer',
     live: '',
     details: true,
-    projectDetailsPageSlug: '/projects/appwrite-mcp-server',
+    projectDetailsPageSlug: '/projects/tendor-summarizer',
     isWorking: true,
   },
   {
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     description:
       'SaaS platform to generate mathematical animation videos from natural language prompts, making education content creation accessible.',
     image: '/project/syncify.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/syncify.mp4',
+    video: '',
     link: 'https://spark-studio-waitlist.vercel.app/',
     technologies: [
       { name: 'React', icon: <ReactIcon key="react" /> },
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     github: '',
     live: 'https://spark-studio-waitlist.vercel.app/',
     details: true,
-    projectDetailsPageSlug: '/projects/syncify',
+    projectDetailsPageSlug: '/projects/spark_studio',
     isWorking: false, // Currently in development
   },
   {
