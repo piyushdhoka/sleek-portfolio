@@ -1,3 +1,5 @@
 export const footerConfig = {
-  developer: 'Piyush Dhoka',
+  text: "Built with ❤️ by",  // <-- Add this
+  developer: "Piyush Dhoka",
+  copyright: "All rights reserved",
 };
