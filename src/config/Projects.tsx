@@ -103,7 +103,7 @@ export const projects: Project[] = [
     ],
     live: '',
     details: true,
-    projectDetailsPageSlug: '/projects/pasandida-aurat',
+    projectDetailsPageSlug: '/projects/attendify_ai',
     isWorking: true,
   },
  
