@@ -44,7 +44,7 @@ export const experiences: Experience[] = [
     company: 'Beeman',
     position: 'Security Analyst',
     location: 'Freelance',
-    image: '/company/GSSOC.png',
+    image: '/company/beeman.png',
     description: [
       'Successfully delivered 10+ production-ready feature implementations and critical bug fixes across enterprise-scale repositories, with 100% merge rate demonstrating code quality and adherence to rigorous peer review standards.',
       'Identified 3 medium-risk, 4 low-risk, and 5 informational vulnerabilities, including missing CSP headers, weak caching policies, and timestamp disclosures',
