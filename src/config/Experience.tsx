@@ -41,6 +41,39 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     isCurrent: false,
+    company: 'Beeman',
+    position: 'Security Analyst',
+    location: 'Freelance',
+    image: '/company/GSSOC.png',
+    description: [
+      'Successfully delivered 10+ production-ready feature implementations and critical bug fixes across enterprise-scale repositories, with 100% merge rate demonstrating code quality and adherence to rigorous peer review standards.',
+      'Identified 3 medium-risk, 4 low-risk, and 5 informational vulnerabilities, including missing CSP headers, weak caching policies, and timestamp disclosures',
+      'Provided actionable remediation strategies to strengthen security posture, documented findings in a detailed report, and shared recommendations with developers',
+    ],
+    startDate: 'July 2025',
+    endDate: 'September 2025',
+    technologies: [
+      {
+        name: 'Next.js',
+        href: 'https://nextjs.org/',
+        icon: <NextJs />,
+      },
+      {
+        name: 'Express',
+        href: 'https://expressjs.com/',
+        icon: <ExpressJs />,
+      },
+      {
+        name: 'TypeScript',
+        href: 'https://www.typescriptlang.org/',
+        icon: <TypeScript />,
+      },
+    ],
+    website: 'https://beeman.org.in/',
+  },
+
+  {
+    isCurrent: false,
     company: 'Girlscript Summer of Code(GSSoC)',
     position: 'Contributor',
     location: 'Freelance',
