@@ -26,6 +26,7 @@
 import Github from '@/components/svgs/Github';
 import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
+import BuyMeACoffee from '@/components/svgs/BuyMeACoffee';
 import X from '@/components/svgs/X';
 import Bun from '@/components/technologies/Bun';
 import JavaScript from '@/components/technologies/JavaScript';
@@ -130,5 +131,10 @@ export const socialLinks = [
     name: 'Email',
     href: 'mailto:piyushxdev@gmail.com',
     icon: <Mail />,
+  },
+  {
+    name: 'Buy Me a Coffee',
+    href: 'https://www.buymeacoffee.com/piyushdhoka',
+    icon: <BuyMeACoffee />,
   },
 ];
