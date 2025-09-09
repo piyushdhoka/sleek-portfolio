@@ -129,16 +129,27 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
 
       {/* Description */}
       <div className="text-secondary flex flex-col">
-        {experience.description.map(
-          (description: string, descIndex: number) => (
+        {experience.description.map((description: string, descIndex: number) => {
+          // Detect Social Summer of Code project mentions and render as links
+          const projectMatch = description.match(/^(.*?): (https?:\/\/[^ ]+)/);
+          if (projectMatch) {
+            const name = projectMatch[1];
+            const url = projectMatch[2];
+            return (
+              <p key={descIndex}>
+                ↪ <a href={url} target="_blank" rel="noopener noreferrer" className="text-secondary underline">{name}</a>
+              </p>
+            );
+          }
+          return (
             <p
               key={descIndex}
               dangerouslySetInnerHTML={{
                 __html: `• ${parseDescription(description)}`,
               }}
             />
-          ),
-        )}
+          );
+        })}
       </div>
     </div>
   );
