@@ -20,6 +20,10 @@
   let idleAnimation = null;
   let idleAnimationFrame = 0;
 
+  // User-controlled sleep toggle (dblclick / double-tap)
+  let userSleep = false;
+  let lastTouchEndTime = 0; // for mobile double-tap detection
+
   const nekoSpeed = 10;
   const spriteSets = {
     idle: [[-3, -3]],
@@ -90,7 +94,9 @@
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
-    nekoEl.style.pointerEvents = "none";
+    // Allow pointer events so we can detect double clicks/taps on the cat
+    // (Note: this may intercept clicks on underlying elements directly beneath the cat.)
+    nekoEl.style.pointerEvents = "auto";
     nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - 16}px`;
     nekoEl.style.top = `${nekoPosY - 16}px`;
@@ -108,6 +114,20 @@
     document.addEventListener("mousemove", function (event) {
       mousePosX = event.clientX;
       mousePosY = event.clientY;
+    });
+
+    // Toggle sleep mode on double click (desktop)
+    nekoEl.addEventListener("dblclick", function () {
+      toggleUserSleep();
+    });
+
+    // Basic double-tap detection for touch devices
+    nekoEl.addEventListener("touchend", function () {
+      const now = Date.now();
+      if (now - lastTouchEndTime < 300) {
+        toggleUserSleep();
+      }
+      lastTouchEndTime = now;
     });
 
     window.requestAnimationFrame(onAnimationFrame);
@@ -138,6 +158,20 @@
   function resetIdleAnimation() {
     idleAnimation = null;
     idleAnimationFrame = 0;
+  }
+
+  function toggleUserSleep() {
+    userSleep = !userSleep;
+    // Reset internal idle state so transitions look natural
+    idleTime = 0;
+    idleAnimation = null;
+    idleAnimationFrame = 0;
+    // Give a tiny feedback frame when entering sleep
+    if (userSleep) {
+      setSprite("tired", 0);
+    } else {
+      setSprite("alert", 0);
+    }
   }
 
   function idle() {
@@ -198,6 +232,15 @@
 
   function frame() {
     frameCount += 1;
+
+    // If user has toggled sleep, keep animating sleeping frames in place
+    if (userSleep) {
+      // Slow, looping sleep animation using existing sprite set
+      setSprite("sleeping", Math.floor(frameCount / 4));
+      // Do not update position while sleeping
+      return;
+    }
+
     const diffX = nekoPosX - mousePosX;
     const diffY = nekoPosY - mousePosY;
     const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
