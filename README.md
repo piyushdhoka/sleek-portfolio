@@ -76,7 +76,7 @@ NEXT_PUBLIC_UMAMI_ID="your-umami-website-id"
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ramxcodes/sleek-portfolio.git
+   git clone https://github.com/piyushdhoka/sleek-portfolio.git
    cd sleek-portfolio
    ```
 
@@ -148,6 +148,4 @@ export const NewTechIcon = () => {
 2. Add metadata and content following existing project structure
 3. Add project thumbnail in `public/project/`
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
