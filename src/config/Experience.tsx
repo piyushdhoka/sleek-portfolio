@@ -39,6 +39,38 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
+
+   {
+    isCurrent: true,
+    company: 'Aceint.ai',
+    position: 'Intern',
+    location: 'Remote',
+    image: '/company/aceint.png',
+    description: [
+      
+    ],
+    startDate: 'October2025',
+    endDate: 'Present',
+    technologies: [
+      {
+        name: 'Next.js',
+        href: 'https://nextjs.org/',
+        icon: <NextJs />,
+      },
+      {
+        name: 'Express',
+        href: 'https://expressjs.com/',
+        icon: <ExpressJs />,
+      },
+      {
+        name: 'TypeScript',
+        href: 'https://www.typescriptlang.org/',
+        icon: <TypeScript />,
+      },
+    ],
+    website: 'https://aceint.ai/',
+  },
+
   {
     isCurrent: false,
     company: 'Beeman',
@@ -73,7 +105,7 @@ export const experiences: Experience[] = [
   },
 
   {
-    isCurrent: false,
+    isCurrent: false, 
     company: 'Girlscript Summer of Code(GSSoC)',
     position: 'Contributor',
     location: 'Freelance',
