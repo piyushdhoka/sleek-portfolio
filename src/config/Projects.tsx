@@ -91,6 +91,27 @@ export const projects: Project[] = [
     projectDetailsPageSlug: '/projects/spark_studio',
     isWorking: false, // Currently in development
   },
+
+    {
+    title: 'SortVision',
+    description:
+      'A modern sorting algorithm visualizer that brings algorithms to life with real-time visualizations.',
+    image: '/project/sortvision.png',
+    video: '',
+    link: 'https://www.sortvision.com/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'RadixUI', icon: <TypeScript key="typescript" /> },
+      { name: 'React.js', icon: <Prisma key="prisma" /> },
+
+    ],
+    github: 'https://github.com/piyushdhoka/SortVision',
+    live: 'https://www.sortvision.com/',
+    details: true,
+    projectDetailsPageSlug: '/projects/sortvision',
+    isWorking: true,
+  },
+  
   {
     title: 'Attendify AI',
     description:
@@ -109,26 +130,6 @@ export const projects: Project[] = [
     live: '',
     details: true,
     projectDetailsPageSlug: '/projects/attendify_ai',
-    isWorking: true,
-  },
-
-  {
-    title: 'SortVision',
-    description:
-      'A modern sorting algorithm visualizer that brings algorithms to life with real-time visualizations.',
-    image: '/project/pasandida.png',
-    video: '',
-    link: '',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'RadixUI', icon: <TypeScript key="typescript" /> },
-      { name: 'React.js', icon: <Prisma key="prisma" /> },
-
-    ],
-    github: 'https://github.com/piyushdhoka/SortVision',
-    live: 'https://www.sortvision.com/',
-    details: true,
-    projectDetailsPageSlug: '/projects/sortvision',
     isWorking: true,
   },
 
