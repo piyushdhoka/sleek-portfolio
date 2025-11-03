@@ -1,0 +1,70 @@
+---
+title: 'MCP Server'
+description: 'A lightweight, high-performance multiplayer coordination server for managing real-time sessions, plugins, and low-latency messaging.'
+image: '/project/mcp_server.png'
+technologies:
+  [
+    'Node.js',
+    'TypeScript',
+    'Supabase',
+    'WebSockets',
+    'Vercel'
+  ]
+github: 'https://github.com/piyushdhoka/mcp_server'
+live: 'https://mcp.sparkstudio.co.in/'
+timeline: '1 month'
+role: 'Full Stack Engineer'
+team: 'Piyush Dhoka'
+status: 'Building'
+featured: true
+challenges:
+  [
+    'Designing an extensible plugin system',
+    'Maintaining low-latency real-time messaging',
+    'Reliable session lifecycle management',
+    'Scaling and state synchronization across instances'
+  ]
+learnings:
+  [
+    'Realtime system architecture',
+    'Plugin-driven extensibility patterns',
+    'Efficient WebSocket and buffer handling',
+    'Deployment and orchestration with Docker/AWS'
+  ]
+isPublished: true
+---
+
+# MCP Server
+
+## Overview
+
+MCP Server is a lightweight, high-performance server designed to coordinate multiplayer sessions, plugin integrations, and real-time messaging. It focuses on extensibility, predictable session handling, and low-latency communication for multiplayer experiences and agent-driven workflows.
+
+## Features
+
+- Robust session lifecycle management (create, join, leave, recover)
+- Plugin system with lifecycle hooks and sandboxed execution
+- Real-time messaging over WebSockets (low-latency events & broadcasts)
+- REST API for administrative operations and health checks
+- Connection and memory caching strategies for performance
+- Designed for horizontal scaling and containerized deployment
+
+## Why I built this
+
+I built MCP Server to simplify the backend complexity of multiplayer and multi-agent applications. Many realtime systems either overcomplicate session management or lock you into rigid architectures. MCP Server provides a flexible, plugin-first foundation so developers can focus on game logic, agent behavior, or feature integrations without rebuilding the coordination layer.
+
+## Notable technical decisions
+
+- Plugin-first architecture: lets teams add features (auth, matchmaking, analytics) without touching core code.
+- WebSocket-based real-time transport with efficient buffer/stream handling for media or state diffs.
+- Caching and memory strategies to reduce latency and improve reconnect behavior.
+- Container-friendly deployment model to run distributed instances behind load balancers.
+
+## Current status & next steps
+
+Active development: core session handling and plugin APIs are implemented and being hardened. Next steps include end-to-end integration tests, documentation for plugin authors, and a small demo client to showcase common flows (matchmaking → session → real-time sync).
+
+## Links
+
+- Source code: https://github.com/piyushdhoka/mcp_server
+- Live: https://mcp.sparkstudio.co.in/

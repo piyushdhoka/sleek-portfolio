@@ -22,6 +22,30 @@ import { Project } from '@/types/project';
 import { tr } from 'date-fns/locale';
 
 export const projects: Project[] = [
+
+    {
+    title: 'Supabase MCP Server',
+    description:
+      'A lightweight, high-performance MCP server implementation for managing multiplayer sessions and plugins.',
+    image: '/project/mcp_server.png',
+    video: '',
+    link: '',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+    ],
+    github: 'https://github.com/piyushdhoka/mcp_server',
+    live: 'https://mcp.sparkstudio.co.in/',
+    details: true,
+    projectDetailsPageSlug: '/projects/mcp_server',
+    isWorking: true,
+  },
   {
     title: 'Twix AI',
     description:
@@ -46,31 +70,12 @@ export const projects: Project[] = [
     isWorking: true,
   },
   {
-    title: 'Tender Summarizer',
-    description:
-      'Industry-grade NLP pipeline for automated summarization and entity extraction from tender PDFs for KRIATEC PVT LTD.',
-    image: '/project/appwrite.png',
-    video: '',
-    link: '',
-    technologies: [
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Bun', icon: <Bun key="bun" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Appwrite', icon: <Appwrite key="appwrite" /> },
-    ],
-    github: 'https://github.com/nakulchandak89/Tender_summerizer',
-    live: '',
-    details: true,
-    projectDetailsPageSlug: '/projects/tendor-summarizer',
-    isWorking: true,
-  },
-  {
-    title: 'Spark Studio',
+    title: 'Movinglines',
     description:
       'SaaS platform to generate mathematical animation videos from natural language prompts, making education content creation accessible.',
     image: '/project/syncify.png',
     video: '',
-    link: 'https://spark-studio-waitlist.vercel.app/',
+    link: '/',
     technologies: [
       { name: 'React', icon: <ReactIcon key="react" /> },
       { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
@@ -81,7 +86,7 @@ export const projects: Project[] = [
       { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
     ],
     github: '',
-    live: 'https://spark-studio-waitlist.vercel.app/',
+    live: '',
     details: true,
     projectDetailsPageSlug: '/projects/spark_studio',
     isWorking: false, // Currently in development
