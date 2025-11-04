@@ -42,8 +42,8 @@ export const experiences: Experience[] = [
 
    {
     isCurrent: true,
-    company: 'Aceint.ai',
-    position: 'Intern',
+    company: 'Bootcoding Pvt Ltd',
+    position: 'Technical Intern',
     location: 'Remote',
     image: '/company/aceint.png',
     description: [
