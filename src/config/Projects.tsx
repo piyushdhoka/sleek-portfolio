@@ -50,7 +50,7 @@ export const projects: Project[] = [
     title: 'Twix AI',
     description:
       'Tweet enhancement tool built with Next.js, TypeScript, and Prisma to optimize tweet editing time and improve engagement.',
-    image: '/project/notesbuddy.png',
+    image: '/project/twix_ai.png',
     video: '',
     link: '',
     technologies: [
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     title: 'Movinglines',
     description:
       'SaaS platform to generate mathematical animation videos from natural language prompts, making education content creation accessible.',
-    image: '/project/syncify.png',
+    image: '/project/movinglines.png',
     video: '',
     link: '/',
     technologies: [
