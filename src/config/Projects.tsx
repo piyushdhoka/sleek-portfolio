@@ -23,6 +23,30 @@ import { tr } from 'date-fns/locale';
 
 export const projects: Project[] = [
 
+   {
+    title: 'Vector Store RAG Agent for DIP Diet',
+    description:
+      'A comprehensive web application for personal productivity, health tracking, and AI-driven Disciplined and Intelligent Plan Diet recommendations.',
+    image: '/project/architecture.png',
+    video: 'https://ik.imagekit.io/broggzhnf/InShot_20251029_022226940.mp4?updatedAt=1762349006752',
+    link: '',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+    ],
+    github: '',
+    live: '',
+    details: true,
+    projectDetailsPageSlug: '/projects/dip_diet',
+    isWorking: true,
+  },
+
     {
     title: 'Supabase MCP Server',
     description:
@@ -46,6 +70,7 @@ export const projects: Project[] = [
     projectDetailsPageSlug: '/projects/mcp_server',
     isWorking: true,
   },
+
   {
     title: 'Twix AI',
     description:
