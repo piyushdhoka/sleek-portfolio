@@ -94,6 +94,31 @@ export const projects: Project[] = [
     projectDetailsPageSlug: '/projects/twixai',
     isWorking: true,
   },
+
+    {
+    title: 'Repo Scout',
+    description:
+      'Repo Scout helps you discover and contribute to curated open source GitHub issues matched to your skills and interests.',
+    image: '/project/reposcout.png',
+    video: '',
+    link: 'https://reposcout.sparkstudio.co.in/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+    ],
+    github: 'https://github.com/piyushdhoka/Repo-Scout',
+    live: 'https://reposcout.sparkstudio.co.in/',
+    details: true,
+    projectDetailsPageSlug: '/projects/repo_scout',
+    isWorking: true,
+  },
+
   {
     title: 'Movinglines',
     description:
