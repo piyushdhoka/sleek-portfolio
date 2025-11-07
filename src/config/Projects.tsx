@@ -72,29 +72,28 @@ export const projects: Project[] = [
   },
 
   {
-    title: 'Twix AI',
+    title: 'Movinglines',
     description:
-      'Tweet enhancement tool built with Next.js, TypeScript, and Prisma to optimize tweet editing time and improve engagement.',
-    image: '/project/twix_ai.png',
+      'SaaS platform to generate mathematical animation videos from natural language prompts, making education content creation accessible.',
+    image: '/project/movinglines.png',
     video: '',
-    link: '',
+    link: '/',
     technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
       { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
       { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
     ],
-    github: 'https://github.com/piyushdhoka/twix_ai',
+    github: '',
     live: '',
     details: true,
-    projectDetailsPageSlug: '/projects/twixai',
-    isWorking: true,
+    projectDetailsPageSlug: '/projects/spark_studio',
+    isWorking: false, // Currently in development
   },
-
+  
     {
     title: 'Repo Scout',
     description:
@@ -144,26 +143,27 @@ export const projects: Project[] = [
   },
 
   {
-    title: 'Movinglines',
+    title: 'Twix AI',
     description:
-      'SaaS platform to generate mathematical animation videos from natural language prompts, making education content creation accessible.',
-    image: '/project/movinglines.png',
+      'Tweet enhancement tool built with Next.js, TypeScript, and Prisma to optimize tweet editing time and improve engagement.',
+    image: '/project/twix_ai.png',
     video: '',
-    link: '/',
+    link: '',
     technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
       { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
     ],
-    github: '',
+    github: 'https://github.com/piyushdhoka/twix_ai',
     live: '',
     details: true,
-    projectDetailsPageSlug: '/projects/spark_studio',
-    isWorking: false, // Currently in development
+    projectDetailsPageSlug: '/projects/twixai',
+    isWorking: true,
   },
 
     {
