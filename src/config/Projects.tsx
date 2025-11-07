@@ -119,6 +119,30 @@ export const projects: Project[] = [
     isWorking: true,
   },
 
+    {
+    title: 'Motiatube',
+    description:
+      'MotiaTube is an AI‑powered YouTube channel analyzer that generates crazy video titles, with backend workflows orchestrated by the Motia framework.',
+    image: '/project/motiatube.png',
+    video: '',
+    link: 'https://motiatube.sparkstudio.co.in/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+    ],
+    github: 'https://github.com/piyushdhoka/motia_yt',
+    live: 'https://motiatube.sparkstudio.co.in/',
+    details: true,
+    projectDetailsPageSlug: '/projects/motiatube',
+    isWorking: true,
+  },
+
   {
     title: 'Movinglines',
     description:

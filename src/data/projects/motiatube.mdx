@@ -1,0 +1,76 @@
+---
+title: 'MotiaTube'
+description: 'AI‑powered YouTube channel analyzer that generates optimized video titles, orchestrated by the Motia framework.'
+image: '/project/motia_backend.png'
+technologies:
+  [
+    'Next.js',
+    'TypeScript',
+    'TailwindCSS',
+    'Clerk',
+    'Vercel',
+    'Motia Framework',
+    'Framer Motion',
+    'Lucide React',
+    'Docker'
+  ]
+github: 'https://github.com/piyushdhoka/motia_yt'
+live: 'https://motiatube.sparkstudio.co.in/'
+timeline: '2 weeks'
+role: 'Builder'
+team: 'Piyush Dhoka'
+status: 'completed'
+featured: true
+challenges:
+  [
+    'Reconciling Clerk dev vs. live environments',
+    'Next.js 15 middleware compatibility with Clerk',
+    'Aligning frontend payloads with Motia /submit endpoint',
+    'Handling caching/CDN invalidation and CORS in production',
+    'Designing a resilient client with endpoint fallbacks'
+  ]
+learnings:
+  [
+    'Clerk production key management and redirect prop migration',
+    'Robust middleware patterns in Next.js 15',
+    'Resilient API client patterns with graceful degradation',
+    'Production env setup on Vercel (headers, caching, env vars)',
+    'Motia workflow orchestration and operational hygiene'
+  ]
+isPublished: true
+---
+
+# MotiaTube: AI YouTube Title Optimization
+
+## Overview
+
+MotiaTube helps YouTube creators analyze channels and generate optimized video titles powered by AI. The backend workflows are orchestrated by the Motia framework, ensuring reliable job execution, email notifications, and scheduled cleanup—all wrapped in a modern Next.js 15 frontend with Clerk authentication.
+
+# Key Features
+
+- **AI Title Generation:** Automatic, channel‑aware title suggestions via Motia workflows.
+- **Simple Submission:** One‑click channel + email submission with form validation.
+- **Clerk Authentication:** Production‑ready sign‑in/up and user profile management.
+- **Resilient Backend Calls:** Tries `/submit` first, then gracefully falls back to `/api/submit`.
+- **Production-Ready Setup:** Security headers, env‑driven config, and Vercel deployment.
+- **Email Notifications:** Results delivered to your inbox after analysis completes.
+- **Automated Maintenance:** Daily cleanup tasks ensure healthy operations.
+
+# Tools I've Implemented
+
+- Motia workflow pipeline:
+  - `01-submit` → enqueue analysis job
+  - `02-resolve-channel` → normalize/resolve channel details
+  - `03-fetchvideos` → pull recent videos for context
+  - `04-ai-title` → generate optimized titles with AI
+  - `05-send-email` → deliver results to the user
+  - `06-error-handler` → centralized failure handling and alerts
+  - `07-daily-cleanup` → scheduled maintenance
+- Clerk integration and migration to modern redirect props (Next.js 15‑friendly).
+- Robust endpoint selection with automatic fallback (`/submit` → `/api/submit`) and actionable errors.
+- Production configs (security headers, env management) and Vercel deployment wiring.
+- Smooth UI details with TailwindCSS + Framer Motion and consistent iconography via Lucide.
+
+# Learnings
+
+- Building maintainable Motia workflows with explicit steps and clean error handling.
