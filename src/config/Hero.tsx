@@ -90,7 +90,7 @@ export const heroConfig = {
   // Description Configuration
   description: {
     template:
-      'Hello! I’m Piyush Dhoka, a third-year engineering student specializing in Artificial Intelligence and Machine Learning (AIML). My passion lies in the dynamic fields of full-stack development and machine learning'
+      'Hello! I’m Piyush Dhoka, a third-year engineering student specializing in Artificial Intelligence and Machine Learning (AIML). tldr; is I can code until I find a solution, giving up isn\'t an option. Coding isn\'t just a skill for me; it\'s the one thing I genuinely enjoy and feel connected to.'
   },
 
   // Buttons Configuration
