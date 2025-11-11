@@ -55,7 +55,7 @@ export const skillComponents = {
 export const heroConfig = {
   // Personal Information
   name: 'Piyush Dhoka',
-  title: 'AI ML Engineer | Full Stack Developer | Open Source Contributor',
+  title: 'AI ML Engineer',
   avatar: '/assets/logo.png',
 
   // Skills Configuration
@@ -90,7 +90,7 @@ export const heroConfig = {
   // Description Configuration
   description: {
     template:
-      'Hello! I’m Piyush Dhoka, a third-year engineering student specializing in Artificial Intelligence and Machine Learning (AIML). tldr; is I can code until I find a solution, giving up isn\'t an option. Coding isn\'t just a skill for me; it\'s the one thing I genuinely enjoy and feel connected to.'
+      'I can code until I find a solution, giving up isn\'t an option. Coding isn\'t just a skill for me; it\'s the one thing I genuinely enjoy and feel connected to.'
   },
 
   // Buttons Configuration
