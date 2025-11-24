@@ -46,6 +46,29 @@ export const projects: Project[] = [
     isWorking: true,
   },
 
+     {
+    title: 'Sweep',
+    description:
+      'Fast zero-config CLI to list & clean unused JS/TS imports and detect unused code.',
+    image: '/project/sweep.png',
+    video: '',
+    link: 'https://sweep-npm.vercel.app/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+    ],
+    github: 'https://github.com/piyushdhoka/sweep',
+    live: 'https://sweep-npm.vercel.app/',
+    details: true,
+    projectDetailsPageSlug: '/projects/sweep',
+    isWorking: true,
+  },
     {
     title: 'Supabase MCP Server',
     description:

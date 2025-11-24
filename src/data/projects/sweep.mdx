@@ -1,0 +1,74 @@
+---
+title: 'Sweep'
+description: 'Zero-config fast CLI to sweep unused JS/TS imports & detect unused code (heuristic) with monorepo support.'
+image: '/project/sweep.png'
+technologies:
+  [
+    'TypeScript',
+    'Node.js',
+    'Babel',
+    'Commander',
+    'Chalk',
+    'Fast-glob',
+  ]
+github: 'https://github.com/piyushdhoka/sweep'
+live: 'https://sweep-npm.vercel.app/'
+timeline: '1 month'
+role: 'Author'
+team: 'Solo'
+status: 'completed'
+featured: true
+challenges:
+  [
+    'AST Parsing & Manipulation',
+    'Monorepo Compatibility',
+    'Performance Optimization',
+    'Safe Code Removal'
+  ]
+learnings:
+  [
+    'Abstract Syntax Trees (AST)',
+    'CLI Architecture',
+    'File System Traversal',
+    'NPM Publishing',
+  ]
+isPublished: true
+---
+
+# Sweep : Zero-config Code Cleanup CLI
+
+## Overview
+
+Sweep is a high-performance, zero-configuration CLI tool designed to keep JavaScript and TypeScript codebases clean. It uses AST parsing to safely identify and remove unused imports and detect dead code, ensuring your project remains maintainable and efficient.
+
+## What Users Can Do
+
+- **List Unused Imports:** Instantly scan your project to identify imports that are no longer used.
+- **Auto-Clean Imports:** Safely remove unused imports with a single command, keeping your files tidy.
+- **Detect Dead Code:** Find unused variables, functions, classes, and types to reduce bundle size.
+- **Monorepo Support:** Seamlessly works with Turborepo, PNPM, and Yarn workspaces, resolving path aliases automatically.
+
+## Why I built this
+
+I built Sweep to solve a growing problem in the era of AI-assisted coding. When cloning or generating projects from tools like Bolt, Lovable, or v0, the output often contains:
+
+- Unnecessary `useState` and `useEffect` hooks.
+- Redundant imports and unused variables.
+- Leftover boilerplate code.
+
+Sweep automates the cleanup of this "AI residue," ensuring that while you benefit from AI generation, your codebase remains clean, human-readable, and performant.
+
+## Tech Stack
+
+- TypeScript
+- Node.js
+- Babel (for AST parsing)
+- Commander.js
+- Chalk
+- Fast-glob
+
+## Future Plans
+
+- Enhanced linter integrations.
+- Support for more file types and languages.
+- Deeper integration with CI/CD pipelines for automated cleanup.
