@@ -208,25 +208,4 @@ export const projects: Project[] = [
     isWorking: true,
   },
   
-  {
-    title: 'Attendify AI',
-    description:
-      'AI-powered facial recognition attendance system using OpenCV for automated and accurate attendance tracking.',
-    image: '/project/pasandida.png',
-    video: '',
-    link: '',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Prisma', icon: <Prisma key="prisma" /> },
-      { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
-    ],
-    live: '',
-    details: true,
-    projectDetailsPageSlug: '/projects/attendify_ai',
-    isWorking: true,
-  },
-
 ];
