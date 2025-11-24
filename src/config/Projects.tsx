@@ -170,7 +170,7 @@ export const projects: Project[] = [
       'Tweet enhancement tool built with Next.js, TypeScript, and Prisma to optimize tweet editing time and improve engagement.',
     image: '/project/twix_ai.png',
     video: '',
-    link: '',
+    link: 'https://twix-ai.vercel.app/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
@@ -182,7 +182,7 @@ export const projects: Project[] = [
       { name: 'MDX', icon: <MDXIcon key="mdx" /> },
     ],
     github: 'https://github.com/piyushdhoka/twix_ai',
-    live: '',
+    live: 'https://twix-ai.vercel.app/',
     details: true,
     projectDetailsPageSlug: '/projects/twixai',
     isWorking: true,
