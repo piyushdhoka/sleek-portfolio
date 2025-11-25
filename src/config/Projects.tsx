@@ -69,53 +69,7 @@ export const projects: Project[] = [
     projectDetailsPageSlug: '/projects/sweep',
     isWorking: true,
   },
-    {
-    title: 'Supabase MCP Server',
-    description:
-      'A lightweight, high-performance MCP server implementation for managing multiplayer sessions and plugins.',
-    image: '/project/mcp_server.png',
-    video: '',
-    link: '',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
-    ],
-    github: 'https://github.com/piyushdhoka/mcp_server',
-    live: 'https://mcp.sparkstudio.co.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/mcp_server',
-    isWorking: true,
-  },
 
-  {
-    title: 'Movinglines',
-    description:
-      'SaaS platform to generate mathematical animation videos from natural language prompts, making education content creation accessible.',
-    image: '/project/movinglines.png',
-    video: '',
-    link: '/',
-    technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
-    ],
-    github: '',
-    live: '',
-    details: true,
-    projectDetailsPageSlug: '/projects/spark_studio',
-    isWorking: false, // Currently in development
-  },
-  
     {
     title: 'Repo Scout',
     description:
@@ -140,28 +94,27 @@ export const projects: Project[] = [
     isWorking: true,
   },
 
-    {
-    title: 'Motiatube',
+  {
+    title: 'Movinglines',
     description:
-      'MotiaTube is an AI‑powered YouTube channel analyzer that generates crazy video titles, with backend workflows orchestrated by the Motia framework.',
-    image: '/project/motiatube.png',
+      'SaaS platform to generate mathematical animation videos from natural language prompts, making education content creation accessible.',
+    image: '/project/movinglines.png',
     video: '',
-    link: 'https://motiatube.sparkstudio.co.in/',
+    link: '/',
     technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
       { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
       { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
     ],
-    github: 'https://github.com/piyushdhoka/motia_yt',
-    live: 'https://motiatube.sparkstudio.co.in/',
+    github: '',
+    live: '',
     details: true,
-    projectDetailsPageSlug: '/projects/motiatube',
-    isWorking: true,
+    projectDetailsPageSlug: '/projects/spark_studio',
+    isWorking: false, // Currently in development
   },
 
   {
@@ -189,23 +142,50 @@ export const projects: Project[] = [
   },
 
     {
-    title: 'SortVision',
+    title: 'Motiatube',
     description:
-      'A modern sorting algorithm visualizer that brings algorithms to life with real-time visualizations.',
-    image: '/project/sortvision.png',
+      'MotiaTube is an AI‑powered YouTube channel analyzer that generates crazy video titles, with backend workflows orchestrated by the Motia framework.',
+    image: '/project/motiatube.png',
     video: '',
-    link: 'https://www.sortvision.com/',
+    link: 'https://motiatube.sparkstudio.co.in/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'RadixUI', icon: <TypeScript key="typescript" /> },
-      { name: 'React.js', icon: <Prisma key="prisma" /> },
-
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
     ],
-    github: 'https://github.com/piyushdhoka/SortVision',
-    live: 'https://www.sortvision.com/',
+    github: 'https://github.com/piyushdhoka/motia_yt',
+    live: 'https://motiatube.sparkstudio.co.in/',
     details: true,
-    projectDetailsPageSlug: '/projects/sortvision',
+    projectDetailsPageSlug: '/projects/motiatube',
     isWorking: true,
   },
-  
+    {
+    title: 'Supabase MCP Server',
+    description:
+      'A lightweight, high-performance MCP server implementation for managing multiplayer sessions and plugins.',
+    image: '/project/mcp_server.png',
+    video: '',
+    link: 'https://mcp.sparkstudio.co.in/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+    ],
+    github: 'https://github.com/piyushdhoka/mcp_server',
+    live: 'https://mcp.sparkstudio.co.in/',
+    details: true,
+    projectDetailsPageSlug: '/projects/mcp_server',
+    isWorking: true,
+  },
+
 ];
