@@ -41,7 +41,7 @@ export interface Experience {
 export const experiences: Experience[] = [
 
    {
-    isCurrent: true,
+    isCurrent: false,
     company: 'Bootcoding Pvt Ltd',
     position: 'SDE Intern',
     location: 'Remote',
