@@ -1,0 +1,78 @@
+---
+title: 'Cybercoach'
+description: 'Built an AI-powered cybersecurity education platform with RAG-based tutoring, adaptive learning paths, and proctored assessments for job-ready skills.'
+image: '/project/cybercoach.png'
+technologies:
+  [
+    'React',
+    'TypeScript',
+    'Nextjs',
+    'Node.js',
+    'Express',
+    'Supabase',
+    'RAG (NIST/OWASP docs)',
+    'Gemini',
+    'Docker',
+  ]
+github: ''
+live: 'https://vois-cybercoach.vercel.app/'
+timeline: '8 months'
+role: 'Fullstack'
+status: 'completed'
+featured: true
+challenges:
+  [
+    'Reliable proctoring signals with varying device quality',
+    'Grounding answers to trusted cybersecurity sources (RAG)',
+    'Maintaining performance and accuracy under concurrent users'
+  ]
+learnings:
+  [
+    'RAG pipeline design for factual QA',
+    'Optimizing real-time UX for assessments and timers',
+    'Secure, scalable auth + data workflows with Supabase'
+  ]
+isPublished: true
+---
+
+# Cybercoach: Learn cybersecurity with AI + proctored assessments
+
+## Overview
+
+Cybercoach is a full-stack cybersecurity learning platform designed to help learners build real skills through structured content, adaptive guidance, and secure assessments.  
+It combines an AI tutor powered by Retrieval-Augmented Generation (RAG) with a proctored testing experience, so learning stays practical, measurable, and trustworthy.
+
+![Cybercoach architecture](/project/cybach.png)
+
+## Why We Built This
+
+Cybersecurity learners often face two problems:
+1) content that’s scattered and hard to follow, and  
+2) assessments that don’t reliably validate real understanding.
+
+We built **Cybercoach** to deliver a single experience where users can:
+- learn in a structured way,
+- ask questions with answers grounded in credible sources,
+- and validate skills through proctored assessments that reduce cheating.
+
+## Key Features
+
+- **AI Tutor with RAG**: Answers grounded in curated security references (e.g., OWASP, NIST-style documents) instead of generic responses.
+- **Proctored Assessments**: Camera/microphone-enabled monitoring with basic exam integrity controls.
+- **Adaptive Learning Path**: Learner progression informs recommendations and next steps.
+- **Practice + Progress Tracking**: Track completion, performance, and skill level across modules.
+- **Career Support**: Job-focused learning signals and student tooling aligned with outcomes.
+
+## Tech Stack
+
+- **Frontend**: React + TypeScript + TailwindCSS
+- **Backend**: Node.js + Express (TypeScript)
+- **Database/Auth**: Supabase
+- **AI Layer**: RAG over security documents + LLM (Gemini)
+- **Media/Proctoring**: Browser media APIs for webcam/mic permissions and monitoring workflow
+
+## Future Plans
+
+- Add deeper analytics for learner strengths and weaknesses
+- Expand question banks and scenario-based labs
+- Our own CMD

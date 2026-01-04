@@ -22,6 +22,30 @@ import { tr } from 'date-fns/locale';
 
 export const projects: Project[] = [
 
+      {
+    title: 'Cybercoach - AI Education Platform',
+    description:
+      'AI-driven cybersecurity education platform that provides adaptive learning paths, skill based assessments and integrated career tools prepare students for the cybersecurity industry.',
+    image: '/project/cybercoach.png',
+    video: '',
+    link: 'https://vois-cybercoach.vercel.app/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+    ],
+    github: '',
+    live: 'https://vois-cybercoach.vercel.app/',
+    details: true,
+    projectDetailsPageSlug: '/projects/cybercoach',
+    isWorking: true,
+  },
+
    {
     title: 'Vector Store RAG Agent for DIP Diet',
     description:
