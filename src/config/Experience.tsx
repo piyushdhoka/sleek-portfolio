@@ -50,7 +50,7 @@ export const experiences: Experience[] = [
       
     ],
     startDate: 'October2025',
-    endDate: 'Present',
+    endDate: 'December 2025',
     technologies: [
       {
         name: 'Next.js',
