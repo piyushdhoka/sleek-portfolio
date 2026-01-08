@@ -121,10 +121,10 @@ export const projects: Project[] = [
   {
     title: 'Movinglines',
     description:
-      'SaaS platform to generate mathematical animation videos from natural language prompts, making education content creation accessible.',
+      'SaaS platform to generate animated videos from natural language prompts, making education content creation accessible.',
     image: '/project/movinglines.png',
     video: '',
-    link: '/',
+    link: 'https://www.movinglines.co.in/',
     technologies: [
       { name: 'React', icon: <ReactIcon key="react" /> },
       { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
@@ -134,11 +134,11 @@ export const projects: Project[] = [
       { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
       { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
     ],
-    github: '',
-    live: '',
+    github: 'https://github.com/piyushdhoka/movinglines',
+    live: 'https://www.movinglines.co.in/',
     details: true,
     projectDetailsPageSlug: '/projects/spark_studio',
-    isWorking: false, // Currently in development
+    isWorking: true, 
   },
 
   {
