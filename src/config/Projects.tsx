@@ -139,30 +139,7 @@ export const projects: Project[] = [
     projectDetailsPageSlug: '/projects/repo_scout',
     isWorking: true,
   },
-
-  {
-    title: 'Movinglines',
-    description:
-      'SaaS platform to generate animated videos from natural language prompts, making education content creation accessible.',
-    image: '/project/movinglines.png',
-    video: '',
-    link: 'https://www.movinglines.co.in/',
-    technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
-    ],
-    github: 'https://github.com/piyushdhoka/movinglines',
-    live: 'https://www.movinglines.co.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/spark_studio',
-    isWorking: true, 
-  },
-
+  
   {
     title: 'Twix AI',
     description:
