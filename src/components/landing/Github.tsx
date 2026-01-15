@@ -33,14 +33,23 @@ type GitHubContributionResponse = {
 };
 
 // Helper function to filter contributions to past year
-function filterLastYear(contributions: ContributionItem[]): ContributionItem[] {
-  const oneYearAgo = new Date();
-  oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
-
-  return contributions.filter((item) => {
-    const itemDate = new Date(item.date);
-    return itemDate >= oneYearAgo;
-  });
+// Helper function to filter contributions to the current calendar year
+// Helper function to fill missing dates for the current year
+function fillYearWithContributions(contributions: ContributionItem[]): ContributionItem[] {
+  const currentYear = new Date().getFullYear();
+  const startDate = new Date(currentYear, 0, 1); // Jan 1
+  const endDate = new Date(currentYear, 11, 31); // Dec 31
+  const dateMap = new Map(contributions.map(item => [item.date, item]));
+  const filled: ContributionItem[] = [];
+  for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
+    const iso = d.toISOString().slice(0, 10);
+    if (dateMap.has(iso)) {
+      filled.push(dateMap.get(iso)!);
+    } else {
+      filled.push({ date: iso, count: 0, level: 0 });
+    }
+  }
+  return filled;
 }
 
 export default function Github() {
@@ -91,16 +100,21 @@ export default function Github() {
             }));
 
           if (validContributions.length > 0) {
-            // Calculate total contributions
-            const total = validContributions.reduce(
+            // Filter to show only the current year
+            const currentYear = new Date().getFullYear();
+            const currentYearContributions = validContributions.filter(item => {
+              const itemDate = new Date(item.date);
+              return itemDate.getFullYear() === currentYear;
+            });
+            // Calculate total contributions for the current year
+            const total = currentYearContributions.reduce(
               (sum, item) => sum + item.count,
               0,
             );
             setTotalContributions(total);
-
-            // Filter to show only the past year
-            const filteredContributions = filterLastYear(validContributions);
-            setContributions(filteredContributions);
+            // Fill missing dates for the chart
+            const filledContributions = fillYearWithContributions(currentYearContributions);
+            setContributions(filledContributions);
           } else {
             setHasError(true);
           }

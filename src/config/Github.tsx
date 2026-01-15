@@ -11,7 +11,7 @@ export const githubConfig = {
 
   // Display settings
   title: 'GitHub Activity',
-  subtitle: 'coding journey over the past year',
+  subtitle: 'coding journey going in 2026',
 
   // Chart settings
   blockSize: 11,
