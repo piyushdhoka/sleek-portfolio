@@ -27,7 +27,7 @@ export const projects: Project[] = [
     description:
       'AI-driven cybersecurity education platform that provides adaptive learning paths, skill based assessments and integrated career tools prepare students for the cybersecurity industry.',
     image: '/project/cybercoach.png',
-    video: '',
+    video: 'https://ik.imagekit.io/broggzhnf/cybercoach',
     link: 'https://vois-cybercoach.vercel.app/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
