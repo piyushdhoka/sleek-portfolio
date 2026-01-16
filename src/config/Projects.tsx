@@ -140,6 +140,31 @@ export const projects: Project[] = [
     isWorking: true,
   },
   
+  
+   {
+    title: 'Chainlit RAG Using LlamaIndex',
+    description:
+      'An AI-powered learning companion built with Chainlit and LlamaIndex, featuring RAG for accurate, context-aware responses.',
+    image: '/project/llamaindex.png',
+    video: '',
+    link: 'https://huggingface.co/spaces/piyushdhoka27/cyber-mentor-space',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+    ],
+    github: 'https://github.com/piyushdhoka/Cyber_RAG',
+    live: 'https://huggingface.co/spaces/piyushdhoka27/cyber-mentor-space',
+    details: true,
+    projectDetailsPageSlug: '/projects/llamaindex',
+    isWorking: true,
+  },
+
   {
     title: 'Twix AI',
     description:
