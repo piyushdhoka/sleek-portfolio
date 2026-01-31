@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export const revalidate = 60; // Cache for 1 minute for real-time status
+export const revalidate = 60; // Cache for 1 minute
 
 interface WakaTimeSummary {
     grand_total: {
@@ -29,12 +29,12 @@ export async function GET() {
     try {
         const encodedKey = Buffer.from(apiKey).toString('base64');
 
-        // Fetch both status and yesterday's summary in parallel
-        const [statusResponse, summaryResponse] = await Promise.all([
-            // Get current status (heartbeats) - checks if user is online
-            fetch('https://wakatime.com/api/v1/users/current/status_bar/today', {
+        // Fetch heartbeats and yesterday's summary in parallel
+        const [heartbeatsResponse, summaryResponse] = await Promise.all([
+            // Get recent heartbeats to check if user is currently coding
+            fetch('https://wakatime.com/api/v1/users/current/heartbeats?date=' + new Date().toISOString().split('T')[0], {
                 headers: { Authorization: `Basic ${encodedKey}` },
-                next: { revalidate: 60 }, // Cache for 1 minute for real-time feel
+                next: { revalidate: 60 }, // Cache for 1 minute
             }),
             // Get yesterday's summary for coding time
             fetch('https://wakatime.com/api/v1/users/current/summaries?range=yesterday', {
@@ -43,22 +43,22 @@ export async function GET() {
             }),
         ]);
 
-        // Parse status response
+        // Check if user is currently online by looking at recent heartbeats
         let isOnline = false;
-        let currentEditor = 'Antigravity';
 
-        if (statusResponse.ok) {
-            const statusData = await statusResponse.json();
-            // User is considered online if they have recent activity (within last 5 minutes)
-            // The status_bar endpoint returns data about current coding session
-            if (statusData.data) {
-                const hasRecentActivity = statusData.data.grand_total?.total_seconds > 0;
-                isOnline = hasRecentActivity;
+        if (heartbeatsResponse.ok) {
+            const heartbeatsData = await heartbeatsResponse.json();
+            const heartbeats = heartbeatsData.data || [];
 
-                // Get current editor from today's activity
-                if (statusData.data.categories && statusData.data.categories.length > 0) {
-                    currentEditor = statusData.data.categories[0]?.name || 'Antigravity';
-                }
+            if (heartbeats.length > 0) {
+                // Get the most recent heartbeat
+                const lastHeartbeat = heartbeats[heartbeats.length - 1];
+                const lastHeartbeatTime = new Date(lastHeartbeat.time * 1000); // Convert Unix timestamp
+                const now = new Date();
+                const diffMinutes = (now.getTime() - lastHeartbeatTime.getTime()) / (1000 * 60);
+
+                // User is online if they had activity within the last 5 minutes
+                isOnline = diffMinutes <= 5;
             }
         }
 
@@ -80,13 +80,10 @@ export async function GET() {
                 hours: 0,
                 minutes: 0,
                 totalSeconds: 0,
-                editor: currentEditor,
+                editor: 'Antigravity', // Always show Antigravity
                 isOnline,
             });
         }
-
-        // Get the primary editor (most used)
-        const primaryEditor = summary.editors?.[0]?.name || 'VS Code';
 
         // Format the time display
         const hours = summary.grand_total?.hours || 0;
@@ -107,7 +104,7 @@ export async function GET() {
             hours,
             minutes,
             totalSeconds,
-            editor: primaryEditor,
+            editor: 'Antigravity', // Always show Antigravity
             text: summary.grand_total?.text || codingTime,
             isOnline,
         });
