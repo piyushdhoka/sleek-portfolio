@@ -6,6 +6,7 @@ import React from 'react';
 
 import Container from '../common/Container';
 import Skill from '../common/Skill';
+import WakaTimeStatus from '../common/WakaTimeStatus';
 import CV from '../svgs/CV';
 import Chat from '../svgs/Chat';
 import { Button } from '../ui/button';
@@ -50,14 +51,21 @@ export default function Hero() {
 
   return (
     <Container className="mx-auto max-w-5xl">
-      {/* Image */}
-      <Image
-        src={avatar}
-        alt="hero"
-        width={100}
-        height={100}
-        className="size-24 rounded-full border border-gray-200 bg-blue-300 transition-all duration-300 ease-in-out hover:scale-90 dark:bg-[var(--logo-bg-dark)]"
-      />
+      {/* Avatar with WakaTime Status */}
+      <div className="relative inline-block">
+        <Image
+          src={avatar}
+          alt="hero"
+          width={100}
+          height={100}
+          className="size-24 rounded-full border border-gray-200 bg-blue-300 transition-all duration-300 ease-in-out hover:scale-90 dark:bg-[var(--logo-bg-dark)]"
+        />
+
+        {/* WakaTime Badge - positioned at bottom-right of avatar, closer */}
+        <div className="absolute bottom-0 right-0">
+          <WakaTimeStatus />
+        </div>
+      </div>
 
       {/* Text Area */}
       <div className="mt-8 flex flex-col gap-2">
