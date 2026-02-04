@@ -23,12 +23,12 @@ import { tr } from 'date-fns/locale';
 export const projects: Project[] = [
 
       {
-    title: 'Cybercoach - AI Education Platform',
+    title: 'GradeU',
     description:
-      'AI-driven cybersecurity education platform that provides adaptive learning paths, skill based assessments and integrated career tools prepare students for the cybersecurity industry.',
+      'AI-driven education platform that provides adaptive learning paths, skill based assessments and integrated career tools prepare students for the cybersecurity industry.',
     image: '/project/cybercoach.png',
     video: 'https://ik.imagekit.io/broggzhnf/cybercoach',
-    link: 'https://vois-cybercoach.vercel.app/',
+    link: 'https://www.gradeu.in/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
@@ -40,7 +40,7 @@ export const projects: Project[] = [
       { name: 'MDX', icon: <MDXIcon key="mdx" /> },
     ],
     github: '',
-    live: 'https://vois-cybercoach.vercel.app/',
+    live: 'https://www.gradeu.in/',
     details: true,
     projectDetailsPageSlug: '/projects/cybercoach',
     isWorking: true,
