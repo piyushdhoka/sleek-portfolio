@@ -165,6 +165,29 @@ export const projects: Project[] = [
     isWorking: true,
   },
 
+   {
+    title: 'Sympforyou',
+    description:
+      'An AI-powered multi-channel health assistant that orchestrates IBM Watsonx, NLU, and Speech services to deliver real-time, voice-enabled symptom analysis and medical insights across web and WhatsApp platforms.',
+    image: '/project/ibm.png',
+    video: '',
+    link: 'https://sympforyou.vercel.app/',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+    ],
+    github: 'https://github.com/piyushdhoka/ibm-healthcare',
+    live: 'https://sympforyou.vercel.app/',
+    details: true,
+    projectDetailsPageSlug: '/projects/ibm',
+    isWorking: true, 
+  },
+
   {
     title: 'Twix AI',
     description:

@@ -1,0 +1,69 @@
+---
+title: 'Sympforyou'
+description: 'An AI-powered multi-channel health assistant that orchestrates IBM Watsonx, NLU, and Speech services to deliver real-time, voice-enabled symptom analysis and medical insights across web and WhatsApp platforms.'
+image: '/project/ibm.png'
+technologies:
+  [
+    'React',
+    'TypeScript',
+    'Nextjs',
+    'Node.js',
+    'Express',
+    'Supabase',
+    'RAG (NIST/OWASP docs)',
+    'Gemini',
+    'Docker',
+  ]
+github: 'https://github.com/piyushdhoka/ibm-healthcare'
+live: 'https://sympforyou.vercel.app/'
+timeline: '1 month'
+role: 'Fullstack'
+status: 'completed'
+featured: true
+challenges:
+  [
+    'Ensuring accurate medical context with IBM Granite prompt engineering',
+    'Minimizing latency for real-time speech-to-text and text-to-speech conversion',
+    'Managing session state and context across stateless WhatsApp webhooks',
+    'Handling multi-language inputs accurately for diverse user demographics'
+  ]
+learnings:
+  [
+    'Orchestrating multiple IBM Cloud services (Watsonx, NLU, STT, TTS) in a unified flow',
+    'Designing accessible, voice-first user interfaces for healthcare contexts',
+    'Implementing robust error handling for AI model hallucinations in JSON responses',
+    'Building scalable webhook handlers for Twilio and WhatsApp integration'
+  ]
+isPublished: true
+---
+
+# AI Health Assistant: Multi-channel symptom analysis & voice support
+
+## Overview
+
+AI Health Assistant is a comprehensive, multi-channel platform designed to provide accessible preliminary health insights. It leverages the power of IBM Watsonx and generative AI to analyze symptoms, offer home remedies, and provide guidance in real-time.
+
+Uniquely, it offers a seamless **voice-first experience** on the web and extends its reach to millions of users via a fully integrated **WhatsApp bot**, ensuring healthcare guidance is available wherever the user is.
+
+## Problem Statement
+
+Agentic AI Health Symptom Checker helps users understand their health conditions by analyzing symptoms and providing probable causes, preventive advice, and care recommendations. It retrieves verified medical data, symptom databases, and guidelines from trusted sources like WHO, government health portals, and medical journals. Users can input symptoms in natural language such as “I have a sore throat and fever,” and the agent provides possible conditions, urgency level, home remedies, and when to consult a doctor. It supports multi-language interaction and avoids self-diagnosis risks by offering educational and referral-based suggestions. This AI-driven assistant promotes early detection, reduces misinformation, and empowers users to take informed health actions.
+
+![Architecture](/project/ibmach.png)
+
+## Key Features
+
+- **AI Symptom Analysis**: Uses **IBM Granite-3-8b-instruct** to generate structured health reports, including urgency levels and probable causes.
+- **Voice-First Interface**: Full duplex voice interaction using **IBM Watson Speech-to-Text** and **Text-to-Speech** for a hands-free experience.
+- **WhatsApp Integration**: A complete chat experience on WhatsApp via Twilio, enabling users to send voice notes or text descriptions for instant analysis.
+- **Intent Recognition**: Intelligent routing of user queries (Help vs. Diagnosis vs. General Chat) using **IBM Watson NLU**.
+- **Multi-Language Support**: Native support for English, Spanish, French, Hindi, and more, breaking down language barriers in healthcare.
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router) + React + TailwindCSS
+- **AI Core**: IBM Watsonx.ai (Granite Model)
+- **Voice Services**: IBM Watson Speech-to-Text (Multimedia) + Text-to-Speech (Neural V3)
+- **Intelligence**: IBM Watson Natural Language Understanding (NLU)
+- **Messaging**: Twilio API (WhatsApp)
+- **Infrastructure**: IBM Cloud IAM & Serverless Functions
